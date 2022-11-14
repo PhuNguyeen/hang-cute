@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>Love</title>
+    <title>Hằng Cute</title>
 
     <meta name="Generator" content="EditPlus" />
 
@@ -15,10 +15,8 @@
     <style>
       html,
       body {
-        height: 100%;
-
+        height: auto;
         padding: 0;
-
         margin: 0;
         background: url("./bg.jpg");
         background-repeat: no-repeat;
@@ -34,19 +32,33 @@
 
         height: 100%;
       }
+      .main {
+        border: 1px solid #4287f5;
+        float: left;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        text-align: center;
+      }
+      .column1 {
+        color: #fc555e;
+      }
+      #bottom {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: #f16969;
+        padding: 15px 0;
+      }
     </style>
   </head>
 
   <body>
     <canvas id="pinkboard"></canvas>
-
     <script>
       /*
-
  * Settings
-
  */
-
       var settings = {
         particles: {
           length: 500, // maximum amount of particles
@@ -62,9 +74,7 @@
       };
 
       /*
-
  * RequestAnimationFrame polyfill by Erik Möller
-
  */
 
       (function () {
@@ -95,9 +105,7 @@
       })();
 
       /*
-
  * Point class
-
  */
 
       var Point = (function () {
@@ -435,5 +443,13 @@
         }, 10);
       })(document.getElementById("pinkboard"));
     </script>
+    <div class="main">
+      <div class="column1">
+        <h1>Hằng</h1>
+      </div>
+      <div class="column2">
+      </div>
+      <h1 id="bottom">Cute</h1>
+    </div>
   </body>
 </html>
